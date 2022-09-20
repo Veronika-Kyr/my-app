@@ -1,16 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-// import App from './App';
-import reportWebVitals from './reportWebVitals';
 
 const bodyEx = document.querySelector("body");
-// const ulEx = document.querySelector("ul");
 
 function changeTheme() {
   bodyEx.classList.add('dark');
-  // ulEx.classList.remove('planets-list');
-  // ulEx.classList.add('darkUl');
   element2 = (<div>
     {element3}
     {element}
@@ -51,4 +46,3 @@ let element2 = (<div>
 </div>);
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(element2);
-reportWebVitals();
