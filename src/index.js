@@ -25,10 +25,13 @@ function changeTheme() {
 }
 
 const element = React.createElement("h1", { style: { color: '#999', fontSize: '19px' } }, "Solar system planets:");
-const element3 = (<label className="switch" htmlFor="checkbox">
-  <input type="checkbox" id="checkbox" onClick={changeTheme} />
-  <div className="slider round"></div>
-</label>);
+
+const element3 =
+  (<label className="switch" htmlFor="checkbox">
+    <input type="checkbox" id="checkbox" onClick={changeTheme} />
+    <div className="slider round"></div>
+  </label>);
+
 let element2 = (<div>
   {element3}
   {element}
